@@ -1,19 +1,20 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1;net452</TargetFrameworks>
+    <TargetFrameworks>net6-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <PackageId>MonoGame.Framework.WpfInterop</PackageId>
-    <Version>1.9.1</Version>
+    <Version>2.1</Version>
     <Authors>MarcStan</Authors>
     <Description>MonoGame integration with WPF. This package provides the D3D11Host from the MonoGame WpfInteropSample. It extends it with WpfGame, WpfMouse and WpfKeyboard and makes it actually usable in any WPF application.
 
-Supports .Net 4.5.2, .Net Core 3.1 and .Net 5</Description>
-    <Copyright>Copyright MarcStan 2016 - 2021</Copyright>
+Supports .Net 6 windows only x64 and x86 for now, windows ARM mabye in future</Description>
+    <Copyright>Copyright MarcStan 2016 - 2022</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/MarcStan/monogame-framework-wpfinterop</PackageProjectUrl>
     <PackageTags>monogame wpf interop</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
@@ -21,7 +22,7 @@ Supports .Net 4.5.2, .Net Core 3.1 and .Net 5</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.0.1641" />
+	  <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.1.303"></PackageReference>
   </ItemGroup>
 
   <ItemGroup>
