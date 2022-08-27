@@ -7,6 +7,7 @@
     <ContentTargetFolders>content</ContentTargetFolders>
     <Platforms>AnyCPU</Platforms>
     <PlatformTarget>AnyCPU</PlatformTarget>
+    <BaseOutputPath>bin\</BaseOutputPath>
 
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -57,8 +57,14 @@ namespace MonoGame.Framework.WpfInterop
         #endregion
 
         #region Properties
-
+        /// <summary>
+        /// graphics device as a service
+        /// </summary>
         public GraphicsDevice GraphicsDevice { get; }
+
+        /// <summary>
+        /// for antialiasing
+        /// </summary>
 
         public bool PreferMultiSampling { get; set; }
 
